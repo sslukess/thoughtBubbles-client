@@ -1,11 +1,14 @@
-import {Outlet, Link} from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 
+import './styles.root.module.css';
 
 function Root() {
 
-    return ( 
-        <div>
-            <h1>Hello I am the root</h1>
+    return (
+        <div id='navbar'>
+            <nav>
+                <h1>Hello I am the root</h1>
+            </nav>
             <Link to={"about"}>About page</Link>
             <Outlet />
         </div>
