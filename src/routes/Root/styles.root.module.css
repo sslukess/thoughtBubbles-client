@@ -1,4 +1,14 @@
-nav {
- display: flex; 
- justify-content: center; 
+.navbar {
+    display: flex;
+    justify-content: center;
+
+}
+
+main {
+    display: flex; 
+    justify-content: center;
+}
+
+#main-content {
+    flex: 0 1 80%;
 }

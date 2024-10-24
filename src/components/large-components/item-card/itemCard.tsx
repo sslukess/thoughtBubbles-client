@@ -1,4 +1,4 @@
-import { Item, ItemProps } from '@project/types/itemsTypes';
+import { ItemProps } from '@project/types/itemsTypes';
 import React from 'react';
 
 const ItemCard: React.FC<ItemProps> = (Props: ItemProps) => {

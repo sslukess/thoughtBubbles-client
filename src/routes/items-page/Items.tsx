@@ -4,7 +4,7 @@ import { useLoaderData } from 'react-router-dom';
 
 function Items() {
 
-    const items = useLoaderData();
+    const items = useLoaderData() as Item[];
 
     return (
         <div>
