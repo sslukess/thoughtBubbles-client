@@ -8,7 +8,7 @@ function Root() {
     return (
         <>
                 <nav id={Styles.navbar}>
-                    <h1>\HoardClient/</h1>
+                    <h1 className={Styles.header}>ThoughtBubbles</h1>
                     <Link to={"items"}>Items page</Link>
                 </nav>
             <main>

@@ -1,7 +1,8 @@
-.navbar {
+#navbar {
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 main {
@@ -11,4 +12,9 @@ main {
 
 #main-content {
     flex: 0 1 80%;
+}
+
+.header {
+    flex: 1 0 100%;
+    text-align: center;
 }
