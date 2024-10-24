@@ -3,6 +3,10 @@ import {
     RouterProvider,
 } from "react-router-dom";
 
+// route elements
+import Items from '@project/routes/items-page/Items';
+import { loader as itemsLoader } from '@project/routes/items-page/utils'
+
 //Routes
 import Root from './Root/Root';
 
@@ -12,12 +16,9 @@ const router = createBrowserRouter([
         element: <Root />,
         children: [
             {
-                path: "about",
-                element: <h1>Hello I am the child</h1>
-            },
-            {
                 path: "items",
-                element: <h1>Hello I am the items</h1>
+                element: <Items />,
+                loader: itemsLoader
             }
         ]
     }

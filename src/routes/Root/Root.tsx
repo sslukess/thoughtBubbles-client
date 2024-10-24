@@ -7,9 +7,9 @@ function Root() {
     return (
         <div id='navbar'>
             <nav>
-                <h1>Hello I am the root</h1>
+                <h1>\HoardClient/</h1>
             </nav>
-            <Link to={"about"}>About page</Link>
+            <Link to={"items"}>Items page</Link>
             <Outlet />
         </div>
     )

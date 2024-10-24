@@ -18,7 +18,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": ["node"],
+
+    /* Paths */
+    "paths": {
+      "@project/*": [
+        "./src/*"
+      ]
+    },
   },
   "include": ["src"]
 }
