@@ -2,11 +2,11 @@
     flex: 1 1 130px;
 
     .itemVisualCard {
-        border: solid var(--thin-border) aquamarine;
+        border: solid var(--thin-border) var(--blue);
         border-radius: var(--small-radius);
         padding: var(--small-gap);
         position: relative;
-        background-color: rgba(167, 62, 202, 0.667);
+        background-color: var(--dark-grey);
         box-sizing: border-box;
 
         /* Before states for transition */
@@ -23,16 +23,16 @@
             height: calc(100% + 20px);
         }
     }
-    
+
     &:nth-child(odd):hover {
         .itemVisualCard {
-            transform: rotate(20deg);
+            transform: rotate(4deg) translate(-10px, -10px);
         }
     }
 
     &:nth-child(even):hover {
         .itemVisualCard {
-            transform: rotate(-20deg);
+            transform: rotate(-4deg) translate(-10px, -10px);
         }
     }
 }

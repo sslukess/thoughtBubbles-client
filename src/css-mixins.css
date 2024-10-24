@@ -1,8 +1,15 @@
 :root {
 
     /* Colors */
+    --background-color: #f9fddd; 
+    
     --blue: #1e90ff;
     --white: #ffffff;
+    
+    --transparent-grey: #fdfdfdc1;
+    --dark-grey: #444444c1;
+
+
 
     /* Spacing */
     font-size: 16px;
