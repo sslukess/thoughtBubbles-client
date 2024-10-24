@@ -1,0 +1,6 @@
+#cardLibray {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: var(--medium-gap);
+}
+

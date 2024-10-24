@@ -1,0 +1,45 @@
+.itemCard {
+    flex: 1 1 130px;
+
+    .itemVisualCard {
+        border: solid var(--thin-border) aquamarine;
+        border-radius: var(--small-radius);
+        padding: var(--small-gap);
+        position: relative;
+        background-color: rgba(167, 62, 202, 0.667);
+        box-sizing: border-box;
+
+        /* Before states for transition */
+        transition: all 0.3s;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    &:hover {
+        .itemVisualCard {
+            z-index: 1;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+        }
+    }
+    
+    &:nth-child(odd):hover {
+        .itemVisualCard {
+            transform: rotate(20deg);
+        }
+    }
+
+    &:nth-child(even):hover {
+        .itemVisualCard {
+            transform: rotate(-20deg);
+        }
+    }
+}
+
+
+.itemTitle {}
+
+.itemBody {}
+
+itemDate {}

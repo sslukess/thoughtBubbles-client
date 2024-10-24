@@ -22,7 +22,7 @@ export class Item {
 // ---- Prop types for item related components --- 
 
 // Props for the Items component
-export interface ItemsProps {
+export interface ItemsCardLibraryProps {
     items: Item[]; 
 }
 

@@ -1,0 +1,18 @@
+:root {
+
+    /* Colors */
+    --blue: #1e90ff;
+    --white: #ffffff;
+
+    /* Spacing */
+    font-size: 16px;
+    
+    --small-gap: 4px; 
+    --medium-gap: 6px;
+
+    /* Borders */
+    --thin-border: 3px;
+
+    --small-radius: 2px;
+
+  }

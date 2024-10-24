@@ -1,20 +1,14 @@
-import ItemCard from "@project/components/large-components/item-card/itemCard"
 import { Item } from '@project/types/itemsTypes';
 import { useLoaderData } from 'react-router-dom';
+
+// Components
+import ItemsCardLibrary from "@project/components/large-components/item-cards-library/itemsCardLibrary"
 
 function Items() {
 
     const items = useLoaderData() as Item[];
 
-    return (
-        <div>
-            {
-                items.map(function (item: Item, index: number) {
-                    return <ItemCard item={item} key={index} />
-                })
-            }
-        </div>
-    )
+    return <ItemsCardLibrary items={items} />
 }
 
 
