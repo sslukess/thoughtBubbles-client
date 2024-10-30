@@ -10,6 +10,8 @@ import { loader as itemsLoader } from '@project/routes/items-page/utils'
 import AddItem from '@project/routes/add-item-page/AddItem'
 import { action as addItemAction } from '@project/routes/add-item-page/utils'
 
+import { action as deleteItemAction } from '@project/routes/delete-item/utils'
+
 //Routes
 import Root from './Root/Root';
 
@@ -27,6 +29,10 @@ const router = createBrowserRouter([
                 path: "add-item",
                 element: <AddItem />,
                 action: addItemAction
+            },
+            {
+                path: "items/delete-item/:id",
+                action: deleteItemAction
             }
         ]
     }

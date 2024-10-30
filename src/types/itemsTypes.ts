@@ -1,22 +1,16 @@
 export class Item {
 
+    id: string;
     title: string;
     body: string; 
-    date: string; 
+    date: string;
 
-    constructor(title: string, body: string, date: string){ 
+    constructor(id: string, title: string, body: string, date: string){ 
+        this.id = id; 
         this.body = body; 
         this.title = title; 
         this.date = date;
     }
-    
-    // // Getters and setters
-    // get title() {
-    //     return this.#title; 
-    // }
-    // set title(newTitle) {
-    //     this.#title = newTitle; 
-    // }
 }
 
 // ---- Prop types for item related components --- 
