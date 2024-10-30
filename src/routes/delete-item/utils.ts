@@ -1,7 +1,8 @@
 import { redirect } from "react-router-dom";
 import { itemArray } from '@project/testing-data/interiemItems'
 
-const action = ({params}) => { 
+
+const action = ({params}: any) => { 
 
     // TODO replace with real delete process
 

@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { itemArray } from '@project/testing-data/interiemItems'
 import { Item } from '@project/types/itemsTypes';
 
-export async function action({request}) {
+export async function action({request}: any) {
 
     const formData = await request.formData();
     const objectData = Object.fromEntries(formData);
