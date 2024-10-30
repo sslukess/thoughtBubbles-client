@@ -6,7 +6,7 @@ function Root() {
     return (
         <>
                 <nav id={styles.navbar}>
-                    <h1 className={styles.header}>ThoughtBubbles</h1>
+                    <h1 className={styles.header}>thoughtBubbles</h1>
                     <Link to={"items"}>Items page</Link>
                     <Link to={"add-item"}>Add Item</Link>
                 </nav>

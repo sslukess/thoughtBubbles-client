@@ -7,7 +7,7 @@ import styles from './itemCard.styles.module.css';
 
 const ItemCard: React.FC<ItemProps> = (Props: ItemProps) => {
 
-    const { item: { id, title, body, date } } = Props;
+    const { item: { id, thought, topics } } = Props;
 
     const action = `delete-item/${id}`;
 
@@ -17,11 +17,8 @@ const ItemCard: React.FC<ItemProps> = (Props: ItemProps) => {
                 <Form method='post' action={action}>
                     <button type="submit">X</button>
                 </Form>
-                <h3 className={styles.itemTitle}>{title}</h3>
-                <p className={styles.itemBody}>{body}</p>
-                <p className={styles.itemDate}>{date}</p>
-                <p className={styles.itemDate}>{id}</p>
-
+                <h3 className={styles.itemTitle}>{thought}</h3>
+                <p className={styles.itemBody}>{topics}</p>
             </div>
         </div>
     )

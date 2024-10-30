@@ -1,15 +1,13 @@
 export class Item {
 
     id: string;
-    title: string;
-    body: string; 
-    date: string;
+    thought: string;
+    topics: string[]; 
 
-    constructor(id: string, title: string, body: string, date: string){ 
+    constructor(id: string, thought: string, topics: string[]){ 
         this.id = id; 
-        this.body = body; 
-        this.title = title; 
-        this.date = date;
+        this.thought = thought; 
+        this.topics = topics; 
     }
 }
 

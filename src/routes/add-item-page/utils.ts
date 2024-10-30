@@ -7,11 +7,13 @@ import { Item } from '@project/types/itemsTypes';
 export async function action({request}) {
 
     const formData = await request.formData();
-    const objectData = Object.fromEntries(formData);
+    
+    const topics = formData.getAll('topics') as string[];
+    const thought = formData.getAll('thought') as string;
 
-    const newItem = new Item(uuidv4(), objectData.name, objectData.thought, objectData.date)
+    const newItem = new Item(uuidv4(), thought, topics);
 
-    itemArray.push(newItem)
+    itemArray.push(newItem);
 
     return redirect('/items'); 
 }
