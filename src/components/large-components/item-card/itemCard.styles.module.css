@@ -3,7 +3,7 @@
 
     .itemVisualCard {
         border: solid var(--thin-border) var(--blue);
-        border-radius: var(--small-radius);
+        border-radius: var(--med-radius);
         padding: var(--small-gap);
         position: relative;
         background-color: var(--dark-grey);

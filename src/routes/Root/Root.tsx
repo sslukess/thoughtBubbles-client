@@ -1,18 +1,16 @@
 import { Outlet, Link } from 'react-router-dom';
 
-// note that this is general import, not scoped. 
-import './styles.root.module.css';
-import Styles from './styles.root.module.css';
+import styles from './styles.root.module.css';
 
 function Root() {
     return (
         <>
-                <nav id={Styles.navbar}>
-                    <h1 className={Styles.header}>ThoughtBubbles</h1>
+                <nav id={styles.navbar}>
+                    <h1 className={styles.header}>ThoughtBubbles</h1>
                     {/* <Link to={"items"}>Items page</Link> */}
                 </nav>
             <main>
-                <section id={Styles["main-content"]}>
+                <section id={styles["main-content"]}>
                     <Outlet />
                 </section>
             </main>
