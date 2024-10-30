@@ -11,6 +11,4 @@ function Items() {
     return <ItemsCardLibrary items={items} />
 }
 
-
-
 export default Items; 

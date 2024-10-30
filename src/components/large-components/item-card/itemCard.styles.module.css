@@ -1,5 +1,5 @@
 .itemCard {
-    flex: 1 1 130px;
+    flex: 0 1 130px;
 
     .itemVisualCard {
         border: solid var(--thin-border) var(--blue);
