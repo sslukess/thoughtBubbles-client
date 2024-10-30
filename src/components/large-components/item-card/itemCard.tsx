@@ -1,19 +1,27 @@
 import { ItemProps } from '@project/types/itemsTypes';
 import React from 'react';
+import { Form } from "react-router-dom";
 
 // Styles
 import styles from './itemCard.styles.module.css';
 
 const ItemCard: React.FC<ItemProps> = (Props: ItemProps) => {
 
-    const { item: { title, body, date } } = Props;
+    const { item: { id, title, body, date } } = Props;
+
+    const action = `delete-item/${id}`;
 
     return (
         <div className={styles.itemCard}>
             <div className={styles.itemVisualCard}>
+                <Form method='post' action={action}>
+                    <button type="submit">X</button>
+                </Form>
                 <h3 className={styles.itemTitle}>{title}</h3>
                 <p className={styles.itemBody}>{body}</p>
                 <p className={styles.itemDate}>{date}</p>
+                <p className={styles.itemDate}>{id}</p>
+
             </div>
         </div>
     )
