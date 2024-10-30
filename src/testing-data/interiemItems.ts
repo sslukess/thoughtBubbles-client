@@ -2,7 +2,7 @@ import { Item } from '@project/types/itemsTypes';
 import { v4 as uuidv4 } from 'uuid';
 
 // get random topic
-function getRandomElements(arr) {
+function getRandomElements(arr: any) {
     const result = [];
     const numElements = Math.floor(Math.random() * arr.length) + 1; // Random count from 1 to arr.length
 
