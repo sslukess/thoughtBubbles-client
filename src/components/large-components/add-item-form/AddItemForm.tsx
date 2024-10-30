@@ -1,21 +1,19 @@
 import { Form } from "react-router-dom";
+import TopicCheckbox from "@project/components/small-components/topic-checkbox/TopicCheckbox"
+import { topicsArray } from '@project/testing-data/interiemItems'
 
 function AddItemForm() {
 
     return (
         <Form method="post" id="new-item-form">
-            <label htmlFor="Name">Name</label>
-            <input type="text" name="name" id="Name" />
+            <label htmlFor="thought">Thought</label>
+            <input type="text" name="thought" id="thought" />
 
-            <label htmlFor="Thought">Thought</label>
-            <input type="text" name="thought" id="Thought" />
-
-            <label htmlFor="Date">Date</label>
-            <input type="date" name="date" id="Date" />
+            {topicsArray.map(topic => { return <TopicCheckbox topic={topic} /> })}
 
             <button type="submit">Submit</button>
         </Form>
     )
-}
+};
 
 export default AddItemForm; 
