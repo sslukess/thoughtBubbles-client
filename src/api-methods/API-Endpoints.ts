@@ -1,7 +1,7 @@
 // These are the API Endpoints used in the applcation.
 // Update these to relect any changes in the API Routing
 
-const API_URL = import.meta.env.THOUGHTBUBBLES_API_URL; 
+const API_URL = import.meta.env.VITE_THOUGHTBUBBLES_API_URL; 
 
 // Get all Thought Bubbles
 function getApiRoute_GetAllThoughtBubbles(){

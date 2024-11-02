@@ -1,9 +1,10 @@
 // import { Item } from '@project/types/itemsTypes';
-import { itemArray } from '@project/testing-data/interiemItems'
+// import { itemArray } from '@project/testing-data/interiemItems'
+import getAllThoughtBubbles from "@project/api-methods/get-All-ThoughtBubbles"
 
-export function loader() {
+export async function loader() {
 
-    const returnArray = itemArray
+    const returnArray = await getAllThoughtBubbles();
 
     return returnArray;
 };
