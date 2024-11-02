@@ -4,13 +4,13 @@ import {
 } from "react-router-dom";
 
 // route elements
-import Items from '@project/routes/items-page/Items';
-import { loader as itemsLoader } from '@project/routes/items-page/utils'
+import ThoughtBubbles from '@project/routes/thoughtbubbles-page/ThoughtBubbles';
+import { loader as itemsLoader } from '@project/routes/thoughtbubbles-page/utils'
 
-import AddItem from '@project/routes/add-item-page/AddItem'
-import { action as addItemAction } from '@project/routes/add-item-page/utils'
+import AddThoughtBubble from '@project/routes/add-thoughtbubble-page/AddThoughtBubble'
+import { action as addThoughtBubbleAction } from '@project/routes/add-thoughtbubble-page/utils'
 
-import { action as deleteItemAction } from '@project/routes/delete-item/utils'
+import { action as deleteThoughtBubbleAction } from '@project/routes/delete-thoughtbubble/utils'
 
 //Routes
 import Root from './Root/Root';
@@ -22,17 +22,17 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "items",
-                element: <Items />,
+                element: <ThoughtBubbles />,
                 loader: itemsLoader
             },
             {
                 path: "add-item",
-                element: <AddItem />,
-                action: addItemAction
+                element: <AddThoughtBubble />,
+                action: addThoughtBubbleAction
             },
             {
                 path: "items/delete-item/:id",
-                action: deleteItemAction
+                action: deleteThoughtBubbleAction
             }
         ]
     }

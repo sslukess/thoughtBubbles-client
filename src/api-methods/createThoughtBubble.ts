@@ -1,7 +1,7 @@
 import { getApiRoute_CreateThoughtBubble } from "@project/api-methods/API-Endpoints"
-import { NoIdItem } from "@project/types/itemsTypes"
+import { NoIdThoughtBubble } from "@project/types/itemsTypes"
 
-async function createThoughtBubble(thoughtBubble: NoIdItem){
+async function createThoughtBubble(thoughtBubble: NoIdThoughtBubble){
 
     const endpoint = getApiRoute_CreateThoughtBubble();
 

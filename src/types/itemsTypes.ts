@@ -1,4 +1,4 @@
-export class NoIdItem {
+export class NoIdThoughtBubble {
     // id: string; NO ID
     thought: string;
     topics: string[]; 
@@ -11,7 +11,7 @@ export class NoIdItem {
 
 }
 
-export class Item extends NoIdItem {
+export class ThoughtBubble extends NoIdThoughtBubble {
 
     id: number;
 
@@ -25,12 +25,12 @@ export class Item extends NoIdItem {
 
 // ---- Prop types for item related components --- 
 
-// Props for the Items component
-export interface ItemsCardLibraryProps {
-    items: Item[]; 
+// Props for the ThoughtBubbles component
+export interface ThoughtBubblesCardLibraryProps {
+    items: ThoughtBubble[]; 
 }
 
-// Item Card
-export interface ItemProps {
-    item: Item; 
+// ThoughtBubble Card
+export interface ThoughtBubbleProps {
+    item: ThoughtBubble; 
 }

@@ -1,11 +1,11 @@
-import { ItemProps } from '@project/types/itemsTypes';
+import { ThoughtBubbleProps } from '@project/types/itemsTypes';
 import React from 'react';
 import { Form } from "react-router-dom";
 
 // Styles
 import styles from './itemCard.styles.module.css';
 
-const ItemCard: React.FC<ItemProps> = (Props: ItemProps) => {
+const ThoughtBubbleCard: React.FC<ThoughtBubbleProps> = (Props: ThoughtBubbleProps) => {
 
     const { item: { id, thought, topics } } = Props;
 
@@ -24,4 +24,4 @@ const ItemCard: React.FC<ItemProps> = (Props: ItemProps) => {
     )
 };
 
-export default ItemCard; 
+export default ThoughtBubbleCard; 
