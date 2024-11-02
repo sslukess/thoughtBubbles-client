@@ -7,8 +7,8 @@ function Root() {
         <>
                 <nav id={styles.navbar}>
                     <h1 className={styles.header}>thoughtBubbles</h1>
-                    <Link to={"items"}>Items page</Link>
-                    <Link to={"add-item"}>Add Item</Link>
+                    <Link to={"items"}>ThoughtBubbles page</Link>
+                    <Link to={"add-item"}>Add ThoughtBubble</Link>
                 </nav>
             <main>
                 <section id={styles["main-content"]}>

@@ -1,24 +1,36 @@
-export class Item {
-
-    id: string;
+export class NoIdThoughtBubble {
+    // id: string; NO ID
     thought: string;
     topics: string[]; 
 
-    constructor(id: string, thought: string, topics: string[]){ 
-        this.id = id; 
+    constructor(thought: string, topics: string[]){ 
+      
         this.thought = thought; 
         this.topics = topics; 
     }
+
+}
+
+export class ThoughtBubble extends NoIdThoughtBubble {
+
+    id: number;
+
+    constructor(id: number, thought: string, topics: string[]){
+        super(thought, topics); 
+
+        this.id = id; 
+    }
+
 }
 
 // ---- Prop types for item related components --- 
 
-// Props for the Items component
-export interface ItemsCardLibraryProps {
-    items: Item[]; 
+// Props for the ThoughtBubbles component
+export interface ThoughtBubblesCardLibraryProps {
+    items: ThoughtBubble[]; 
 }
 
-// Item Card
-export interface ItemProps {
-    item: Item; 
+// ThoughtBubble Card
+export interface ThoughtBubbleProps {
+    item: ThoughtBubble; 
 }

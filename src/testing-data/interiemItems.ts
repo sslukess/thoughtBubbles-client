@@ -1,5 +1,4 @@
-import { Item } from '@project/types/itemsTypes';
-import { v4 as uuidv4 } from 'uuid';
+import { ThoughtBubble } from '@project/types/itemsTypes';
 
 // get random topic
 function getRandomElements(arr: any) {
@@ -23,11 +22,11 @@ function getRandomElements(arr: any) {
 const topicsArray = ["Life", "Bicycles", "Food", "Career"];
 
 //items
-const itemArray: Item[] = [];
+const itemArray: ThoughtBubble[] = [];
 for (let i = 1; i < 10; i++) {
 
     itemArray.push(
-        new Item(uuidv4(), `thought${i}`, getRandomElements(topicsArray)),
+        new ThoughtBubble(2, `thought${i}`, getRandomElements(topicsArray)),
     )
 }
 
