@@ -1,18 +1,13 @@
 import { redirect } from "react-router-dom";
-import { itemArray } from '@project/testing-data/interiemItems'
 
+import deleteThoughtBubble from '@project/api-methods/deleteThoughtBubble'
 
-const action = ({params}: any) => { 
-
-    // TODO replace with real delete process
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const action = async ({params}: any) => { 
 
     const idToDelete = params.id;
-    const indexToDelete = itemArray.findIndex((item) => {
-        return item.id == idToDelete
-    })
-    if (indexToDelete > -1 && indexToDelete < itemArray.length) {
-        itemArray.splice(indexToDelete, 1); // remove 1 element at the specified index
-    }
+
+    await deleteThoughtBubble(idToDelete) // delete that puppy
 
     return redirect('/items'); 
 }

@@ -14,13 +14,19 @@ function getApiRoute_GetThoughtBubbleById(){
 }
 
 // Create Bubble
-function getApiRoute_CreateThoughtBubble(id: string){
-    return `${API_URL}/thoughtbubbles/${id}`;
+function getApiRoute_CreateThoughtBubble(){
+    return `${API_URL}/thoughtbubbles`;
+}
+
+// Delete Bubble
+function getApiRoute_DeleteThoughtBubble(id: number){
+    return `${API_URL}/thoughtbubbles/delete/${id}`;
 }
 
 export {
     getApiRoute_GetAllThoughtBubbles,
     getApiRoute_GetThoughtBubbleById,
-    getApiRoute_CreateThoughtBubble
+    getApiRoute_CreateThoughtBubble,
+    getApiRoute_DeleteThoughtBubble
 };
 
