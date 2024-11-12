@@ -1,1 +1,1 @@
-Latest build: https://thoughtbubbles.netlify.app/
+Latest build: https://thoughtbubbles.netlify.app/ [![Netlify Status](https://api.netlify.com/api/v1/badges/cb0fb296-ed18-41f6-9de2-4e7e4c076799/deploy-status)](https://app.netlify.com/sites/thoughtbubbles/deploys)
