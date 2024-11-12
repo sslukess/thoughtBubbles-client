@@ -1,0 +1,28 @@
+name: Test Code
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch: # Manually trigger the workflow from GitHub UI
+
+jobs:
+  test-code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install deps
+        run: npm i
+
+      - name: run tests
+        run: npm run test
+
+      - name: run typescript
+        run: tsc
