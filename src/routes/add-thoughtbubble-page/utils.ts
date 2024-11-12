@@ -14,5 +14,5 @@ export async function action({request}: any) {
 
     await createThoughtBubble(newThoughtBubble);
 
-    return redirect('/items'); 
+    return redirect('/thoughtbubbles'); 
 }

@@ -9,7 +9,7 @@ const ThoughtBubbleCard: React.FC<ThoughtBubbleProps> = (Props: ThoughtBubblePro
 
     const { item: { id, thought, topics } } = Props;
 
-    const action = `delete-item/${id}`;
+    const action = `delete-thoughtbubble/${id}`;
 
     return (
         <div className={styles.itemCard}>
