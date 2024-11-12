@@ -9,7 +9,7 @@ const action = async ({params}: any) => {
 
     await deleteThoughtBubble(idToDelete) // delete that puppy
 
-    return redirect('/items'); 
+    return redirect('/thoughtbubbles'); 
 }
 
 export { action };

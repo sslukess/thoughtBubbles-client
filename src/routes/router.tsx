@@ -21,17 +21,17 @@ const router = createBrowserRouter([
         element: <Root />,
         children: [
             {
-                path: "items",
+                path: "thoughtbubbles",
                 element: <ThoughtBubbles />,
                 loader: itemsLoader
             },
             {
-                path: "add-item",
+                path: "add-thoughtbubble",
                 element: <AddThoughtBubble />,
                 action: addThoughtBubbleAction
             },
             {
-                path: "items/delete-item/:id",
+                path: "thoughtbubbles/delete-thoughtbubble/:id",
                 action: deleteThoughtBubbleAction
             }
         ]
