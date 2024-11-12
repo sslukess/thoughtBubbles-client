@@ -25,4 +25,5 @@ jobs:
         run: npm run test
 
       - name: run typescript
-        run: tsc
+        # This runs using the Vite Application code tsconfig values
+        run: npx tsc -p tsconfig.app.json 
