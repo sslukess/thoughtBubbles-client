@@ -51,4 +51,4 @@ I mean, if you really want to open a PR, you can. I might even approve it!
 
 ## 🫐 License
 
-ThoughtBubbles © 2023 by sslukess is licensed under CC BY-NC-ND 4.0 
+ThoughtBubbles © 2024 by sslukess is licensed under CC BY-NC-ND 4.0 
